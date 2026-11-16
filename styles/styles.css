@@ -1,0 +1,610 @@
+/* Index Page + Main CSS */
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    color: #477b64
+}
+
+header {
+    display: block;
+    height: 160px;
+    padding: 10px 50px;
+    text-align: left;
+    background-color: #f5f3de;
+}
+
+header div img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+header div {
+    display: inline-block;
+    padding: 3px;
+}
+
+header div p {
+    font-size: 20px;
+}
+
+header div h1 {
+    font-size: 40px;
+}
+
+header hr {
+    height: 4px;
+    background-color: darkslategrey;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 12px;
+    font-size: 17px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f1b2;
+}
+
+.branding h1,
+.branding p {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.2em 0.6em;
+    border: 3px solid lightgray;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    border: 4px solid darkgray;
+}
+
+main {
+    padding: 20px 50px;
+    background-color: #fcfbf5;
+}
+
+section {
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.hero {
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.hero h2 {
+    display: block;
+    width: 500px;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    width: 500px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.hero form input {
+    width: 300px;
+}
+
+#hero-content {
+    float: left;
+    clear: both;
+    width: 550px;
+}
+
+.hero img {
+    float: right;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+input,
+button {
+    padding: 10px;
+}
+
+input {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.company-info {
+    display: block;
+    height: 275px;
+    width: 95%;
+    padding: 2px;
+    margin: 7px;
+    background-color: #f5f3de;
+    clear: both;
+}
+
+.company-info h2 {
+    margin: 10px;
+}
+
+.company-info table {
+    width: 95%;
+    margin-left: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #263d35;
+    margin-top: 10PX;
+    padding-top: 15px;
+    padding-left: 15px;
+    clear: both;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 5px;
+}
+
+footer div img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+footer div a {
+    color: #f5f3de;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer div a:hover,
+footer div a:focus {
+    text-decoration: underline;
+}
+
+#copyright {
+    color: #f5f3de;
+    margin-left: auto;
+    font-size: 14px;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+
+    header,
+    section,
+    footer {
+        padding: 15px;
+        margin: auto;
+        width: 80%;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+        .apply-form-grid {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    aside.sidebar-info,
+    section.job-post {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .apply-main {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .apply-panel {
+        padding: 16px;
+    }
+
+    .apply-form {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .apply-form .form-field--full,
+    .apply-form .form-fieldset,
+    .apply-form .form-actions {
+        grid-column: auto;
+    }
+}
+
+/* Jobs Page CSS*/
+
+
+body {
+    background-color: #f7f4e9; /* Hoặc mã màu vàng nhạt hiện tại của bạn */
+}
+section.job-post {
+    margin-bottom: 30px;
+}
+
+/* Yêu cầu cho thẻ <aside> */
+aside.sidebar-info {
+    float: right;
+    width: 20%;
+    margin: 0 0 20px 20px;
+    padding: 20px;
+    border: 2px solid #477b64;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Định dạng Card cho từng Job Listing */
+section.job-post {
+    float: left;
+    width: 70%;
+    /* Chiếm phần còn lại bên trái */
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Thiết kế nút bấm Apply */
+.apply-btn {
+    display: inline-block;
+    background-color: #477b64;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #263d35;
+}
+
+/* Apply Page CSS*/
+.apply-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+}
+
+.apply-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.apply-field input,
+.apply-field select,
+.apply-field textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font: inherit;
+}
+
+.apply-main {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.apply-panel {
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 24px;
+    border: 1px solid #d5dbe3;
+    border-radius: 8px;
+}
+
+.apply-intro {
+    margin-bottom: 1rem;
+}
+
+.required-note {
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.required-marker {
+    color: #a61b1b;
+    font-weight: bold;
+}
+
+.apply-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 22px;
+}
+
+.apply-form .form-field {
+    min-width: 0;
+}
+
+.apply-form .form-field--full,
+.apply-form .form-fieldset,
+.apply-form .form-actions {
+    grid-column: 1 / -1;
+}
+
+.apply-form label,
+.apply-form legend {
+    font-weight: bold;
+}
+
+.apply-form .form-field>label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form input[type="tel"],
+.apply-form select,
+.apply-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #8d99a8;
+    border-radius: 4px;
+    padding: 10px;
+    font: inherit;
+    background-color: #ffffff;
+    color: #333030;
+}
+
+.apply-form textarea {
+    resize: vertical;
+}
+
+.apply-form .form-fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 14px 16px 16px;
+    border: 1px solid #b7c2ce;
+    border-radius: 6px;
+}
+
+.apply-form legend {
+    padding: 0 5px;
+}
+
+.apply-form .radio-options,
+.apply-form .skill-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.apply-form .option-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+}
+
+/* Override the general input padding so radio buttons and checkboxes stay compact. */
+.apply-form input[type="radio"],
+.apply-form input[type="checkbox"] {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.apply-form input:focus-visible,
+.apply-form select:focus-visible,
+.apply-form textarea:focus-visible,
+.apply-form button:focus-visible {
+    outline: 3px solid #245db5;
+    outline-offset: 2px;
+}
+
+.apply-form .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.apply-form button {
+    border: 1px solid #263b5e;
+    border-radius: 4px;
+    padding: 10px 18px;
+    background-color: #263b5e;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+}
+
+.apply-form button:hover {
+    background-color: #1c2c47;
+}
+
+.apply-form .reset-button {
+    background-color: #ffffff;
+    color: #263b5e;
+}
+
+.apply-form .reset-button:hover {
+    background-color: #edf1f6;
+}
+
+.apply-form input:focus,
+.apply-form select:focus,
+.apply-form textarea:focus {
+    border-color: #245db5;
+}
+
+/* About Page CSS*/
+.card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Member definition list */
+dt {
+    color: #477D68;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+dd {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+/* Styled student IDs */
+.student-id {
+    display: inline-block;
+    background-color: #E5EFE8;
+    color: #12372A;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Quotes */
+blockquote {
+    background-color: #E5EFE8;
+    border-left: 4px solid #477D68;
+    padding: 12px 16px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Hover effects */
+.card {
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.15);
+}
+
+.student-id:hover {
+    background-color: #477D68;
+    color: #E5EFE8;
+}
+
+/* Group photo */
+.team-photo {
+    border-radius: 12px;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #F8FAFC;
+    text-align: center;
+}
+
+.team-photo img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    color: #475569;
+    font-style: italic;
+    margin-top: 12px;
+}
+
+caption {
+    font-weight: bold;
+    color: #334155;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f3ef;
+}
+
+tbody tr:hover {
+    background-color: #f0edca;
+}
+
+/* Cultural inclusion */
+.inclusion {
+    border-left: 5px solid #0F766E;
+}
+
+.inclusion h2 {
+    color: #0F766E;
+}
