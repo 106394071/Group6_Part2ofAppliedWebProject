@@ -12,7 +12,7 @@ h2 {
 
 header {
     display: block;
-    height: 160px;
+    height: 130px;
     padding: 10px 50px;
     text-align: left;
     background-color: #f5f3de;
@@ -60,28 +60,54 @@ th {
     margin: 0;
 }
 
-nav ul {
+.main-nav {
+    margin-top: 15px;
+    padding: 10px 0;
+    border-top: 4px solid #263d35;
+}
+
+.main-nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+    gap: 12px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-nav a {
-    color: black;
-    text-decoration: none;
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 9px 22px;
+    color: #263d35;
+    background-color: #ffffff;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 20px;
-    padding: 0.2em 0.6em;
-    border: 3px solid lightgray;
-    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #d5dfd7;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
-nav a:hover,
-nav a:focus {
-    text-decoration: underline;
-    border: 4px solid darkgray;
+.main-nav a:hover {
+    background-color: #477b64;
+    color: #ffffff;
+    border-color: #477b64;
+}
+
+.main-nav a[aria-current="page"] {
+    background-color: #263d35;
+    color: #f5f3de;
+    border-color: #263d35;
+}
+
+.main-nav a:focus-visible {
+    outline: 3px solid #477b64;
+    outline-offset: 4px;
 }
 
 main {
@@ -217,12 +243,18 @@ footer div a:focus {
         width: 80%;
     }
 
-    nav ul {
-        gap: 12px;
+    .main-nav ul {
+        gap: 8px;
+    }
+
+    .main-nav a {
+        padding: 8px 14px;
+        font-size: 16px;
     }
 
     main {
         width: 95%;
+
         .apply-form-grid {
             grid-template-columns: minmax(0, 1fr);
         }
@@ -277,8 +309,10 @@ footer div a:focus {
 
 
 body {
-    background-color: #f7f4e9; /* Hoặc mã màu vàng nhạt hiện tại của bạn */
+    background-color: #f7f4e9;
+    /* Hoặc mã màu vàng nhạt hiện tại của bạn */
 }
+
 section.job-post {
     margin-bottom: 30px;
 }
@@ -367,6 +401,7 @@ section.job-post {
 
 .apply-intro {
     margin-bottom: 1rem;
+    max-width: 70ch;
 }
 
 .required-note {
