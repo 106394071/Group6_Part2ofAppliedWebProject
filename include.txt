@@ -1,0 +1,56 @@
+<header class="branding">
+    <div>
+        <img src="styles/images/brightpath-logo.jpg" alt="Company Logo">
+        <div>
+            <h1>Brightpath</h1>
+            <p>Technology is your guide to a perfect study path.</p>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Main navigation">
+    <ul>
+        <li>
+            <a href="index.php"
+                <?php if ($current_page === "index.php") echo 'aria-current="page"'; ?>>
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="jobs.php"
+                <?php if ($current_page === "jobs.php") echo 'aria-current="page"'; ?>>
+                Jobs
+            </a>
+        </li>
+        <li>
+            <a href="apply.php"
+                <?php if ($current_page === "apply.php") echo 'aria-current="page"'; ?>>
+                Apply
+            </a>
+        </li>
+        <li>
+            <a href="about.php"
+                <?php if ($current_page === "about.php") echo 'aria-current="page"'; ?>>
+                About Us
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<footer aria-labelledby="footer-navigation">
+    <div id="footer-navigation">
+        <div>
+            <img src="styles/images/icons/jira.jpg" alt="Jira">
+            <a href="https://106394071.atlassian.net/jira/software/projects/CS26/boards/1?filter=&groupBy=none&atlOrigin=eyJpIjoiOThjZmQzMGU5NzQ5NDY5ZWJiYWY4OWJhMDg0ZmMwNWQiLCJwIjoiaiJ9">Our Jira</a>
+        </div>
+        <div>
+            <img src="styles/images/icons/github.png" alt="GitHub">
+            <a href="https://github.com/106394071/Group6_Part1ofAppliedWebProject.git">Our GitHub</a>
+        </div>
+        <div>
+            <img src="styles/images/icons/mail.jpg" alt="Email">
+            <a href="mailto:106394071@student.swin.edu.au">Contact Us</a>
+        </div>
+        <div id="copyright">© 2026 Brightpath. All rights reserved.</div>
+    </div>
+</footer>
