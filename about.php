@@ -36,7 +36,7 @@ include("nav.inc");
             <dt>Member 1: Nguyen Hoang Minh Triet</dt>
             <dd>
                 <span class="student-id">Student ID: 106394673</span>
-                <p>Contribution: Responsible for about.php file.</p>
+                <p>Contribution: About Us page.</p>
                 <blockquote>
                     "Có công mài sắt, có ngày nên kim."
                     <br>
@@ -47,7 +47,7 @@ include("nav.inc");
             <dt>Member 2: Pham Nguyen Gia Hung</dt>
             <dd>
                 <span class="student-id">Student ID: 106394071</span>
-                <p>Contribution: Responsible for index.php file.</p>
+                <p>Contribution: Homepage development and global CSS styling.</p>
                 <blockquote>
                     "Đi một ngày đàng, học một sàng khôn."
                     <br>
@@ -58,7 +58,7 @@ include("nav.inc");
             <dt>Member 3: Pham Nguyen Duc Tuan</dt>
             <dd>
                 <span class="student-id">Student ID: 106394084</span>
-                <p>Contribution: Responsible for apply.php file.</p>
+                <p>Contribution: Application form.</p>
                 <blockquote>
                     "Thất bại là mẹ thành công."
                     <br>
@@ -69,7 +69,7 @@ include("nav.inc");
             <dt>Member 4: Nguyen Le Anh</dt>
             <dd>
                 <span class="student-id">Student ID: 106679338</span>
-                <p>Contribution: Responsible for jobs.php file.</p>
+                <p>Contribution: Job listings page.</p>
                 <blockquote>
                     "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao."
                     <br>
